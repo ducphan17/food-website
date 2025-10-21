@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Category{
+  id String @id @default(cuid())
+  createAt DateTime @default(now())
+  title String
+  desc String
+  color String
+  img String
+  slug String @unique
+  order Int @default(0) 
+  products Product[] // products since a category can have multiple products
+}
+
+model Product {
+  id String @id @default(cuid())
+  createAt DateTime @default(now())
+  title String
+  desc String
+  img String? // image is not required
+  price Decimal
+  isFeatured Boolean @default(false) // don't need to fill this field so default
+  options Json[]
+  // a product can only belongs to one category
+  category Category @relation(fields: [catSlug], references: [slug]) // fields catSlug is in Product model, references slug is in Category model
+  catSlug String
+}
+
+
+model Order {
+  id String @id @default(cuid())
+  createAt DateTime @default(now())
+  price Decimal
+  // we will not store the product itself, but just information of the orders
+  products Json[]
+  status String
+  intent_id String? @unique // Question mark indicates that it is not required
+
+}
+
