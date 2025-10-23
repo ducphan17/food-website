@@ -41,6 +41,7 @@ export const menu: Menu = [
 //     title: "Broken Rice with Grilled Pork Bowl (Cơm Tấm)",
 //     desc: "A traditional Vietnamese dish featuring broken rice topped with grilled pork, pickled vegetables, and fresh herbs.",
 //     img: "/Broken-rice.jpg",
+//     price: 10
 //     color: "white",
 //   },
 //   {
@@ -50,6 +51,7 @@ export const menu: Menu = [
 //     desc: "A refreshing bowl of vermicelli noodles topped with grilled pork, fresh vegetables, and a tangy fish sauce dressing.",
 //     img: "/Grilled-Pork-Noodle.jpg",
 //     color: "white",
+//     price: 10
 //   },
 //   {
 //     id: 3,
@@ -58,6 +60,7 @@ export const menu: Menu = [
 //     desc: "Bowl of sticky rice with lots of good toppings",
 //     img: "/xoi.png",
 //     color: "white",
+//     price: 10
 //   },
 
 //   {
@@ -67,6 +70,7 @@ export const menu: Menu = [
 //     desc: "A classic Vietnamese sandwich filled with grilled pork, pickled vegetables, fresh herbs, and spicy mayo on a crispy baguette.",
 //     img: "/banhmi.png",
 //     color: "white",
+//     price: 9
 //   },
 //   {
 //     id: 5,
@@ -75,6 +79,7 @@ export const menu: Menu = [
 //     desc: "Fresh rice paper rolls filled with shrimp, vermicelli noodles, lettuce, and herbs, served with a peanut dipping sauce.",
 //     img: "/house roll.png",
 //     color: "white",
+//     price: 10
 //   },
 //   {
 //     id: 6,
@@ -83,6 +88,7 @@ export const menu: Menu = [
 //     desc: "Delicious spring rolls filled with shrimp, vermicelli noodles, lettuce, and herbs, served with a tangy dipping sauce.",
 //     img: "/ShrimpRoll.png",
 //     color: "white",
+//     price: 10
 //   },
 //   {
 //     id: 7,
@@ -91,6 +97,7 @@ export const menu: Menu = [
 //     desc: "Crispy fried rolls filled with a savory mixture of ground pork, mushrooms, and vegetables, served with a sweet and sour sauce.",
 //     img: "/eggroll.png",
 //     color: "white",
+//     price: 10
 //   },
 //   {
 //     id: 8,
@@ -99,6 +106,7 @@ export const menu: Menu = [
 //     desc: "A strong and sweet Vietnamese iced coffee made with dark roast coffee, sweetened condensed milk, and served over ice.",
 //     img: "/icecoffee.png",
 //     color: "white",
+//     price: 5
 //   },
 //   {
 //     id: 9,
@@ -107,6 +115,7 @@ export const menu: Menu = [
 //     desc: "A refreshing blend of tropical fruits steeped in tea, served chilled with a hint of mint.",
 //     img: "/tropicaltea.png",
 //     color: "white",
+//     price: 6
 //   },
 //   {
 //     id: 10,
@@ -115,4 +124,5 @@ export const menu: Menu = [
 //     desc: "A delightful milk tea with chewy tapioca pearls, available in various flavors like matcha, taro, and classic milk tea.",
 //     img: "/bobatea.png",
 //     color: "white",
+//     price: 6
 //   },

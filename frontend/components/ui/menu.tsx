@@ -178,7 +178,7 @@ export function Menu() {
           <CardDescription className="text-sm mb-2">
             {item.desc}
           </CardDescription>
-          <p className="text-lg font-semibold">{item.price}</p>
+          <p className="text-lg font-semibold">${item.price}</p>
         </div>
         <div className="relative w-28 h-28 flex-shrink-0 rounded-lg overflow-hidden">
           <img
@@ -295,7 +295,7 @@ export function Menu() {
                   {selectedItem.desc}
                 </DialogDescription>
                 <div className="flex items-center justify-between">
-                  <p className="text-2xl font-bold">{selectedItem.price}</p>
+                  <p className="text-2xl font-bold">${selectedItem.price}</p>
                   <div className="flex items-center gap-3">
                     <Button
                       variant="outline"

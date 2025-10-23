@@ -4,6 +4,7 @@ import { Utensils } from "lucide-react";
 import Image from "next/image";
 // import Menu from "@/components/ui/menu"
 import {Menu} from "@/components/ui/menu"
+import UserLink from "@/components/UserLinks"
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
               <Button className="bg-[#000] hover:bg-[#CDCDCD] focus:ring-2">
                 Order Now
               </Button>
+              <UserLink/>
             </div>
           </nav>
         </div>
